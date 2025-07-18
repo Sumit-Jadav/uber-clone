@@ -45,6 +45,7 @@ POST /users/register
       "lastName": "Doe"
     },
     "email": "john.doe@example.com",
+    "password":"$2b$10$TWhnPkV6P3RgUpWcciH5ruSIv/VFiVsjj3E77BkrjtzdsV6bTsqwG"
     "socketId": null
   }
 }
