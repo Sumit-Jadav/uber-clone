@@ -37,9 +37,9 @@ POST /users/register
 
 ```
 {
+  "_id": "60a7c7b5e3c12345abcd6789",
   "token": "<jwt-token>",
   "user": {
-    "_id": "60a7c7b5e3c12345abcd6789",
     "fullName": {
       "firstName": "John",
       "lastName": "Doe"
