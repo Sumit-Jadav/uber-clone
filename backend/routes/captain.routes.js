@@ -11,7 +11,7 @@ captainRouter.post(
       .isLength({ min: 3 })
       .withMessage("First name must be at least 3 characters long"),
     body("fullName.lastName")
-      .optional()
+      .optional({ checkFalsy: true })
       .isLength({ min: 3 })
       .withMessage("Last name must be at least 3 characters long"),
     body("email").isEmail().withMessage("Please enter a valid email"),
