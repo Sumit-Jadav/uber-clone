@@ -10,6 +10,10 @@ userRouter.post(
     body("fullName.firstName")
       .isLength({ min: 3 })
       .withMessage("FirstName must be at least 3 characters long"),
+    body("fullName.lastName")
+      .optional({ checkFalsy: true })
+      .isLength({ min: 3 })
+      .withMessage("lastName must be at least 3 characters long"),
     body("password")
       .isLength({ min: 6 })
       .withMessage("Password must be at least 6 characters long!"),
