@@ -4,7 +4,15 @@ import { Link } from "react-router-dom";
 const CaptainLogin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [userData, setUserData] = useState({});
+  const [captainData, setCaptainData] = useState({});
+
+  const submitHandler = async (e) => {
+    e.preventDefault();
+    setEmail("");
+    setPassword("");
+    setCaptainData({ email, password });
+    // console.log(captainData);
+  };
 
   return (
     <div className="p-7 flex flex-col justify-between h-screen">
@@ -40,7 +48,7 @@ const CaptainLogin = () => {
         </form>
         <p className="text-center">
           Join a fleet?{" "}
-          <Link to="/signup" className="text-blue-600  ">
+          <Link to="/captain-signup" className="text-blue-600  ">
             Register as Captain
           </Link>
         </p>
@@ -48,7 +56,7 @@ const CaptainLogin = () => {
       <div>
         <Link
           className="bg-[#d5622d] flex items-center justify-center text-white font-semibold mb-5 rounded px-4 py-2  w-full text-lg placeholder:text-base "
-          to="/captain-login"
+          to="/login"
         >
           Sign in as User
         </Link>
