@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Start = () => {
   return (
     <div>
-      <div className="bg-contain  bg-top  bg-[url('traffic.avif')] h-screen pt-8  w-full  flex  justify-between flex-col">
+      <div className="bg-contain  bg-top  bg-[url('traffic.png')] h-screen pt-8  w-full  flex  justify-between flex-col">
         <img className="w-16 ml-9" src="Uber.png" alt="" />
         <div className="bg-white w-full pb-7 py-4 px-4">
           <h2 className="text-[30px] font-bold">Get Started with Uber</h2>
